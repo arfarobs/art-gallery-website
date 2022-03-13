@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('../assets/fonts/BigShouldersDisplay-Black.ttf');
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('../assets/fonts/BigShouldersDisplay-ExtraBold.ttf');
+    font-weight: 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/Outfit-Light.ttf');
+    font-weight: 300;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    line-height: 1;
+    list-style: none;
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    background: #FCFAF9;
+}
+
+h1, h2, h3, button {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+/*Header*/
+
+.hero {
+    background: url('../assets/mobile/image-hero.jpg');
+    width: 375px;
+    height: 240px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    font-size: 60px;
+    line-height: 55px;
+    color: #151515;
+    margin: 32px 16px;
+    font-weight: 900;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+    margin: 32px 16px;
+}
+
+button {
+    width: 260px;
+    height: 72px;
+    background: #151515;
+    display: flex;
+    position: relative;
+    margin-left: 16px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.63636px;
+    color: #FFFFFF;
+    padding: 24px 0 24px 32px;
+}
+
+.arrow-container {
+    width: 56px;
+    height: 72px;
+    background: #D5966C;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-container img {
+    width: 8px;
+    height: 24px;
+    background: #D5966C;
+}
+
+/*Main section*/
+
+main {
+    margin: 120px 16px;
+}
+
+.img-grid-1 {
+    width: 343px;
+    height: 320px;
+}
+
+.your-day {
+    margin: 21px 0 32px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+}
+
+.your-day h2 {
+    color: #151515;
+}
+
+main p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.your-day p {
+    margin-top: 21px;
+    color: #444444;
+}
+
+.img-grid-2 {
+    width: 343px;
+    height: 480px;
+}
+
+.img-grid-3 {
+    width: 343px;
+    height: 200px;
+    margin: 16px 0px;
+}
+
+.come {
+    background: #151515;
+    padding: 48px 24px 47px;
+}
+
+.come h2 {
+color: #FFFFFF;
+}
+
+.come p {
+    margin-top: 24px;
+    color: #FFFFFF;
+}
+
+/*Footer*/
+
+footer {
+    padding: 48px 32px;
+    background: #151515;
+}
+
+h3 {
+    font-size: 20px;
+    color:#FFFFFF;
+    line-height: 1;
+    font-weight: 900;
+    width: 110px;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 38px 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+ul {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
