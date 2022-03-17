@@ -32,7 +32,7 @@
 
 body {
     display: flex;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
     background: #FCFAF9;
 }
@@ -48,6 +48,10 @@ p {
 }
 
 /*Header*/
+
+header {
+    width: 375px;
+}
 
 .hero {
     background: url('../assets/mobile/image-hero.jpg');
@@ -108,6 +112,7 @@ button {
 
 main {
     margin: 120px 16px;
+    width: 343px;
 }
 
 .img-grid-1 {
@@ -156,7 +161,7 @@ main p {
 }
 
 .come h2 {
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .come p {
@@ -191,4 +196,101 @@ ul {
     display: flex;
     width: 100px;
     justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        width: 768px;
+        display: grid;
+        grid-gap: 48px 0;
+        grid-template: 275px 112px 217px / 389px 48px 291px 40px;
+    }
+
+    .hero {
+        background: url('../assets/tablet/image-hero.jpg');
+        width: 437px;
+        height: 700px;
+        grid-area: 1 / 1 / 4 / 3;
+    }
+
+    h1 {
+        font-size: 70px;
+        line-height: 65px;
+        grid-area: 1 / 2 / 2 / 4;
+        margin: 0;
+        align-self: end;
+    }
+
+    header p {
+        margin: 0;
+        grid-area: 2 / 2 / 3 / 4;
+    }
+
+    form {
+        grid-area: 3 / 2 / 4 / 4;
+    }
+
+    button {
+        margin: 0;
+    }
+
+    /*Main section*/
+
+    main {
+        margin: 120px 40px 120px 39px;
+        width: 689px;
+    }
+
+    article {
+        display: grid;
+        grid-template: 400px 313px 396px / 279px 108px 280px;
+        grid-gap: 11px 11px;
+    }
+
+    .img-grid-1 {
+        width: 398px;
+        height: 400px;
+        grid-area: 1 / 2 / 2 / 4;
+    }
+
+    .your-day {
+        width: 233px;
+        margin: 36px 0 0 0;
+    }
+
+    .img-grid-2 {
+        width: 398px;
+        height: 720px;
+        margin: 0;
+        grid-area: 2 / 1 / 4 / 3;
+    }
+
+    .img-grid-3 {
+        width: 280px;
+        height: 313px;
+        margin: 0;
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .come {
+        padding: 85px 28px 85px 29px;
+        grid-area: 3 / 3 / 4 / 4;
+    }
+
+    /*Footer*/
+
+    footer {
+        padding: 56px 40px 50px 39px;
+        width: 100%;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between
+    }
+
+    footer p {
+        margin: 0 133px 0 64px;
+        width: 281px;
+    }
 }

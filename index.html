@@ -31,7 +31,13 @@
     <main>
       <article>
 
-        <img class="img-grid-1" src="./resources/assets/desktop/image-grid-1.jpg" alt="The main room at the gallery."/>
+        <picture class="img-grid-1">
+          <source media="(min-width: 768px)" srcset="./resources/assets/tablet/image-grid-1.jpg">
+          <source media="(max-width: 375px)" srcset="./resources/assets/mobile/image-grid-1.jpg">
+          <img src="./resources/assets/mobile/image-grid-1.jpg" alt="The galleries main room.">
+        </picture>
+
+        
 
         <div class="your-day">
           <h2>Your day <br>at the gallery</h2>
@@ -41,8 +47,17 @@
           </p>
         </div>
 
-        <img class="img-grid-2" src="./resources/assets/desktop/image-grid-2.jpg" alt="A bench infront of a piece of art."/>
-        <img class="img-grid-3" src="./resources/assets/desktop/image-grid-3.jpg" alt="People viewing the upstairs gallery."/>
+        <picture class="img-grid-2">
+          <source media="(min-width: 768px)" srcset="./resources/assets/tablet/image-grid-2.jpg">
+          <source media="(max-width: 375px)" srcset="./resources/assets/mobile/image-grid-2.jpg">
+          <img src="./resources/assets/mobile/image-grid-2.jpg" alt="A modern bench in-front of a piece of art.">
+        </picture>
+        <picture class="img-grid-3">
+          <source media="(min-width: 768px)" srcset="./resources/assets/tablet/image-grid-3.jpg">
+          <source media="(max-width: 375px)" srcset="./resources/assets/mobile/image-grid-3.jpg">
+          <img src="./resources/assets/mobile/image-grid-3.jpg" alt="People viewing art on the second floor of the gallery.">
+        </picture>
+        
 
         <div class="come">
           <h2>Come &amp; be inspired</h2>
