@@ -91,6 +91,7 @@ button {
 
 main {
     background: #151515;
+    width: 375px;
 }
 
 h1 {
@@ -142,6 +143,10 @@ h3 {
     letter-spacing: 1px;
 }
 
+h3 span {
+    display: block;
+}
+
 footer p {
     margin: 38px 0;
     font-size: 16px;
@@ -153,4 +158,60 @@ ul {
     display: flex;
     width: 100px;
     justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+    /*Header*/
+
+    header {
+        width: 768px;
+        height: 600px;
+    }
+
+    form {
+        position: absolute;
+        top: 0;
+        left: 39px;
+    }
+
+    /*Main*/
+
+    main {
+        width: 768px;
+    }
+
+    article {
+        display: flex;
+        padding: 88px 40px 80px 39px;
+        justify-content: space-between;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 55px;
+        line-height: 50px;
+        width: 223px;
+    }
+
+    .info {
+        margin: 0;
+        width: 398px;
+    }
+
+    /*Footer*/
+
+    footer {
+        padding: 56px 40px 56px 39px;
+        width: 100%;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer p {
+        margin: 0 133px 0 65px;
+        width: 281px;
+    }
 }

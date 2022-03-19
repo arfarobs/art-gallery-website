@@ -193,6 +193,10 @@ h3 {
     letter-spacing: 1px;
 }
 
+h3 span {
+    display: block;
+}
+
 footer p {
     margin: 38px 0;
     font-size: 16px;
