@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('../assets/fonts/BigShouldersDisplay-Black.ttf');
+    font-weight: 900;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('../assets/fonts/BigShouldersDisplay-ExtraBold.ttf');
+    font-weight: 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/Outfit-Light.ttf');
+    font-weight: 300;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    line-height: 1;
+    list-style: none;
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #FCFAF9;
+}
+
+h1, h2, h3, button {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+/*Header*/
+
+header {
+    height: 550px;
+    width: 375px;
+    position: relative;
+}
+
+button {
+    width: 264px;
+    height: 72px;
+    background: #151515;
+    display: flex;
+    position: relative;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.63636px;
+    color: #FFFFFF;
+    padding: 24px 35px 24px 84px;
+}
+
+.arrow-container {
+    width: 56px;
+    height: 72px;
+    background: #D5966C;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-container img {
+    width: 8px;
+    height: 24px;
+    background: #D5966C;
+}
+
+/*Main*/
+
+main {
+    background: #151515;
+}
+
+h1 {
+    margin: 48px 16px;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.info {
+    margin: 0 16px 56px;
+}
+
+address {
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+    color: #D5966C;
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+/*Footer*/
+
+footer {
+    padding: 48px 32px;
+    background: #D5966C;
+}
+
+h3 {
+    font-size: 20px;
+    color:#151515;
+    line-height: 1;
+    font-weight: 900;
+    width: 110px;
+    letter-spacing: 1px;
+}
+
+footer p {
+    margin: 38px 0;
+    font-size: 16px;
+    line-height: 26px;
+    color: #151515;
+}
+
+ul {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+}
