@@ -68,6 +68,10 @@ h1 {
     font-weight: 900;
 }
 
+h1 span {
+    display: block;
+}
+
 header p {
     font-size: 18px;
     line-height: 28px;
@@ -128,6 +132,10 @@ h2 {
     font-weight: 900;
     font-size: 50px;
     line-height: 45px;
+}
+
+h2 span {
+    display: block;
 }
 
 .your-day h2 {
@@ -255,7 +263,11 @@ ul {
 
     .your-day {
         width: 233px;
-        margin: 36px 0 0 0;
+        margin: 36px 0 0;
+    }
+
+    .your-day p {
+        margin-top: 24px;
     }
 
     .img-grid-2 {
@@ -292,5 +304,118 @@ ul {
     footer p {
         margin: 0 133px 0 64px;
         width: 281px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    header {
+        width: 1440px;
+        grid-gap: 0 0;
+        grid-template: 190px 298px 314px / 165px 285px 229px 246px 65px 449px;
+    }
+
+    .hero {
+        background: url('../assets/desktop/image-hero.jpg') right no-repeat #151515;
+        width: 990px;
+        height: 800px;
+        grid-area: 1 / 1 / 4 / 6;
+    }
+
+    h1 {
+        font-size: 96px;
+        line-height: 88px;
+        color: #151515;
+        grid-area: 2 / 2 / 3 / 4;
+        align-self: start;
+        background: -webkit-linear-gradient(0deg, #FFF 285px, #151515 285px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+        grid-area: 2 / 5 / 3 / 7;
+        font-size: 22px;
+        line-height: 32px;
+        width: 350px;
+    }
+
+    form {
+        grid-area: 3 / 5 / 4 / 7;
+    }
+
+    /*Main section*/
+
+    main {
+        margin: 180px 164px 180px 165px;
+        width: 1110px;
+    }
+
+    article {
+        grid-template: 400px 313px 377px / 445px 160px 445px;
+        grid-gap: 30px 30px;
+    }
+
+    .img-grid-1 {
+        width: 635px;
+        height: 400px;
+    }
+
+    .your-day {
+        width: 350px;
+        margin: 60px 0 0;
+    }
+
+    h2 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    h2 span {
+        display: inline;
+    }
+
+    main p {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .your-day p {
+        margin-top: 32px;
+    }
+
+    .img-grid-2 {
+        width: 635px;
+        height: 720px;
+    }
+
+    .img-grid-3 {
+        width: 445px;
+        height: 313px;
+    }
+
+    .come {
+        padding: 65px 47px 64px 48px;
+    }
+
+    .come p {
+        margin-top: 32px;
+    }
+
+    /*Footer*/
+
+    footer {
+        padding: 80px 165px;
+    }
+
+    h3 {
+        font-size: 29px;
+        width: 160px;
+    }
+
+    footer p {
+        font-size: 18px;
+        line-height: 28px;
+        width: 430px;
+        margin: 0 280px 0 140px;
     }
 }
