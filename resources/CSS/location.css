@@ -42,7 +42,7 @@ h1, h2, h3, button {
     text-transform: uppercase;
 }
 
-p {
+p, address {
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
 }
@@ -51,7 +51,7 @@ p {
 
 header {
     height: 550px;
-    width: 375px;
+    max-width: 375px;
     position: relative;
 }
 
@@ -91,7 +91,7 @@ button {
 
 main {
     background: #151515;
-    width: 375px;
+    max-width: 375px;
 }
 
 h1 {
@@ -164,7 +164,7 @@ ul {
     /*Header*/
 
     header {
-        width: 768px;
+        max-width: 768px;
         height: 600px;
     }
 
@@ -177,10 +177,11 @@ ul {
     /*Main*/
 
     main {
-        width: 768px;
+        max-width: 768px;
     }
 
     article {
+        width: 768px;
         display: flex;
         padding: 88px 40px 80px 39px;
         justify-content: space-between;
@@ -213,5 +214,72 @@ ul {
     footer p {
         margin: 0 133px 0 65px;
         width: 281px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    header {
+        height: 600px;
+        width: 1440px;
+    }
+
+    form {
+        left: 156px;
+    }
+
+    /*Main*/
+
+    main {
+        max-width: 1440px;
+    }
+
+    article {
+        width: 1440px;
+        padding: 104px 165px 128px;
+    }
+
+    h1 {
+        font-size: 70px;
+        line-height: 70px;
+        width: 350px;
+    }
+
+    .info {
+        width: 540px;
+    }
+
+    address {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 32px;
+    }
+
+    h2 {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 24px;
+    }
+
+    .info p {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    /*Footer*/
+
+    footer {
+        padding: 80px 165px;
+    }
+
+    h3 {
+        width: 160px;
+        font-size: 29px;
+    }
+
+    footer p {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 0 280px 0 140px;
+        width: 430px;
     }
 }
