@@ -79,6 +79,11 @@ header p {
     margin: 32px 16px;
 }
 
+button, .arrow-container {
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
 button {
     width: 260px;
     height: 72px;
@@ -109,7 +114,6 @@ button {
 .arrow-container img {
     width: 8px;
     height: 24px;
-    background: #D5966C;
 }
 
 /*Main section*/
@@ -208,6 +212,15 @@ ul {
     display: flex;
     width: 100px;
     justify-content: space-between;
+}
+
+ul a {
+    filter: invert(100%) sepia(85%) saturate(2%) hue-rotate(58deg) brightness(103%) contrast(101%);
+    transition: filter 0.3s ease-in-out;
+}
+
+ul a:hover, ul a:focus-visible {
+    filter: invert(72%) sepia(13%) saturate(1452%) hue-rotate(338deg) brightness(89%) contrast(86%);
 }
 
 @media only screen and (min-width: 768px) {
