@@ -186,6 +186,7 @@ main p {
 footer {
     padding: 48px 32px;
     background: #151515;
+    max-width: 1440px;
 }
 
 h3 {
@@ -310,7 +311,8 @@ ul a:hover, ul a:focus-visible {
 
     footer {
         padding: 56px 40px 50px 39px;
-        width: 100%;
+        max-width: 768px;
+
     }
 
     .footer-content {
@@ -422,6 +424,7 @@ ul a:hover, ul a:focus-visible {
 
     footer {
         padding: 80px 165px;
+        max-width: 1440px;
     }
 
     h3 {

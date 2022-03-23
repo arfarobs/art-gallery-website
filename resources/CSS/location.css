@@ -55,6 +55,20 @@ header {
     position: relative;
 }
 
+#map {
+    position: relative;
+    z-index: 1;
+    height: 550px;
+    width: 375px;
+}
+
+form {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+
 button, .arrow-container {
     cursor: pointer;
     transition: background 0.3s ease-in-out;
@@ -136,6 +150,7 @@ h2 {
 footer {
     padding: 48px 32px;
     background: #D5966C;
+    max-width: 375px;
 }
 
 h3 {
@@ -180,6 +195,11 @@ ul a:hover, ul a:focus-visible {
         height: 600px;
     }
 
+    #map {
+        height: 600px;
+        width: 768px;
+    }
+
     form {
         position: absolute;
         top: 0;
@@ -215,7 +235,7 @@ ul a:hover, ul a:focus-visible {
 
     footer {
         padding: 56px 40px 56px 39px;
-        width: 100%;
+        max-width: 768px;
     }
 
     .footer-content {
@@ -231,7 +251,10 @@ ul a:hover, ul a:focus-visible {
 
 @media only screen and (min-width: 1440px) {
     header {
-        height: 600px;
+        max-width: 1440px;
+    }
+
+    #map {
         width: 1440px;
     }
 
@@ -281,6 +304,7 @@ ul a:hover, ul a:focus-visible {
 
     footer {
         padding: 80px 165px;
+        max-width: 1440px;
     }
 
     h3 {

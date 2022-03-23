@@ -8,13 +8,22 @@
     <meta name="keywords" content="Frontend Mentor, Art Gallery Website, Challenge, Project, Solution"/>
     <link rel="icon" type="image/png" sizes="32x32" href="./resources/assets/favicon-32x32.png">
     <link rel="stylesheet" href="./resources/CSS/location.css"/>
+    <script src="./config.js"></script>
     <script src="./resources/script/button.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+    <script src="./resources/script/map.js" defer></script>
     <title>Location</title>
   </head>
 
   <body>
     <header>
 
+      <div id="map"></div>
       <form action="./index.html">
         <button type="submit">Back to Home
           <div class="arrow-container">
