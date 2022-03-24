@@ -330,7 +330,7 @@ ul a:hover, ul a:focus-visible {
     header {
         width: 1440px;
         grid-gap: 0 0;
-        grid-template: 190px 298px 314px / 165px 285px 229px 246px 65px 449px;
+        grid-template: 190px 224px 386px / 165px 285px 229px 246px 65px 449px;
     }
 
     .hero {
@@ -428,7 +428,7 @@ ul a:hover, ul a:focus-visible {
     }
 
     h3 {
-        font-size: 29px;
+        font-size: 31px;
         width: 160px;
     }
 
