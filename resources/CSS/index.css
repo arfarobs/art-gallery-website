@@ -83,8 +83,14 @@ button, .arrow-container {
     transition: background 0.3s ease-in-out;
 }
 
-button {
+form {
+    display: flex;
     width: 260px;
+    height: 72px;
+}
+
+button {
+    width: 204px;
     height: 72px;
     background: #151515;
     display: flex;
@@ -102,9 +108,6 @@ button {
     width: 56px;
     height: 72px;
     background: #D5966C;
-    position: absolute;
-    right: 0;
-    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -428,7 +431,7 @@ ul a:hover, ul a:focus-visible {
     }
 
     h3 {
-        font-size: 31px;
+        font-size: 30px;
         width: 160px;
     }
 

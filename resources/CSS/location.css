@@ -67,6 +67,9 @@ form {
     z-index: 2;
     left: 0;
     top: 0;
+    display: flex;
+    width: 264px;
+    height: 72px;
 }
 
 button, .arrow-container {
@@ -75,7 +78,7 @@ button, .arrow-container {
 }
 
 button {
-    width: 264px;
+    width: 208px;
     height: 72px;
     background: #151515;
     display: flex;
@@ -85,16 +88,13 @@ button {
     line-height: 24px;
     letter-spacing: 3.63636px;
     color: #FFFFFF;
-    padding: 24px 35px 24px 84px;
+    padding: 24px 0 24px 32px;
 }
 
 .arrow-container {
     width: 56px;
     height: 72px;
     background: #D5966C;
-    position: absolute;
-    left: 0;
-    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,7 +309,7 @@ ul a:hover, ul a:focus-visible {
 
     h3 {
         width: 160px;
-        font-size: 31px;
+        font-size: 30px;
     }
 
     footer p {
