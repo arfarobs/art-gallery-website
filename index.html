@@ -15,7 +15,12 @@
   <body>
 
     <header>
-      <div class="hero"></div>
+      <picture class="hero">
+        <source media="(min-width: 1440px)" srcset="./resources/assets/desktop/image-hero.jpg, ./resources/assets/desktop/image-hero@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="./resources/assets/tablet/image-hero.jpg, ./resources/assets/tablet/image-hero@2x.jpg 2x">
+        <source media="(min-width: 375px)" srcset="./resources/assets/mobile/image-hero.jpg, ./resources/assets/mobile/image-hero@2x.jpg 2x">
+        <img src="./resources/assets/mobile/image-hero.jpg" alt="" aria-hidden="true">
+      </picture>
       <h1>Modern <span>Art Gallery</span></h1>
       <p>
         The arts in the collection of the Modern Art Gallery all started 

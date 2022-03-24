@@ -54,7 +54,6 @@ header {
 }
 
 .hero {
-    background: url('../assets/mobile/image-hero.jpg');
     width: 375px;
     height: 240px;
 }
@@ -233,7 +232,6 @@ ul a:hover, ul a:focus-visible {
     }
 
     .hero {
-        background: url('../assets/tablet/image-hero.jpg');
         width: 437px;
         height: 700px;
         grid-area: 1 / 1 / 4 / 3;
@@ -334,10 +332,12 @@ ul a:hover, ul a:focus-visible {
     }
 
     .hero {
-        background: url('../assets/desktop/image-hero.jpg') right no-repeat #151515;
+        background: #151515;
         width: 990px;
         height: 800px;
         grid-area: 1 / 1 / 4 / 6;
+        display: flex;
+        justify-content: flex-end;
     }
 
     h1 {
