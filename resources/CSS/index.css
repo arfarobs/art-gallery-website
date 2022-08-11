@@ -51,10 +51,6 @@ p, address {
     font-weight: 300;
 }
 
-a {
-	text-decoration: none;
-}
-
 /*Index Header*/
 
 .index-header {
@@ -91,7 +87,7 @@ button, .arrow-container {
     transition: background 0.3s ease-in-out;
 }
 
-a {
+form {
     display: flex;
     width: 260px;
     height: 72px;
@@ -145,7 +141,7 @@ button {
 	width: 375px;
 }
 
-.location-header a {
+.location-header form {
 	position: absolute;
 	z-index: 2;
 	left: 0;
@@ -350,7 +346,7 @@ ul a {
         grid-area: 2 / 2 / 3 / 4;
     }
 
-    .index-header a {
+    .index-header form {
         grid-area: 3 / 2 / 4 / 4;
     }
 
@@ -370,7 +366,7 @@ ul a {
 			width: 768px;
 		}
 
-		.location-header a {
+		.location-header form {
 			position: absolute;
 			top: 0;
 			left: 39px;
@@ -514,7 +510,7 @@ ul a {
         width: 350px;
     }
 
-    .index-header a {
+    .index-header form {
         grid-area: 3 / 5 / 4 / 7;
     }
 
@@ -524,7 +520,7 @@ ul a {
 			max-width: 1440px;
 		}
 
-		.location-header a {
+		.location-header form {
 			left: 156px;
 		}
 
