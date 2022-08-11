@@ -333,7 +333,7 @@ ul a {
         grid-area: 1 / 1 / 4 / 3;
     }
 
-    h1 {
+    header h1 {
         font-size: 70px;
         line-height: 65px;
         grid-area: 1 / 2 / 2 / 4;
@@ -492,7 +492,7 @@ ul a {
         justify-content: flex-end;
     }
 
-    h1 {
+    header h1 {
         font-size: 96px;
         line-height: 88px;
         color: #151515;
