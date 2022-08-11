@@ -350,7 +350,7 @@ ul a {
         grid-area: 3 / 2 / 4 / 4;
     }
 
-    button {
+    .our-location-button {
         margin: 0;
     }
 
@@ -546,7 +546,7 @@ ul a {
         margin: 60px 0 0;
     }
 
-    h2 {
+    .index-main h2 {
         font-size: 60px;
         line-height: 60px;
     }
