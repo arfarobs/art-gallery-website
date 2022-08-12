@@ -38,16 +38,16 @@ body {
 		min-height: 100vh;
 }
 
-h1, h2, h3, header a {
+h1, h2, h3, header a, .address h2 {
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
 }
 
-h2 {
+h2, .address h2 {
 	font-weight: 900;
 }
 
-p, address {
+p {
     font-family: 'Outfit', sans-serif;
     font-weight: 300;
 }
@@ -257,14 +257,14 @@ main h1 {
 	margin: 0 16px 56px;
 }
 
-address {
+.address {
 	font-size: 18px;
 	line-height: 28px;
 	color: #FFFFFF;
 	margin-bottom: 20px;
 }
 
-.location-main h2 {
+.address h2 {
 	font-size: 32px;
 	line-height: 32px;
 	color: #D5966C;
@@ -626,7 +626,7 @@ ul a {
 			width: 540px;
 		}
 
-		address {
+		.address {
 			font-size: 22px;
 			line-height: 32px;
 			margin-bottom: 32px;
