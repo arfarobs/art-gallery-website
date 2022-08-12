@@ -1,5 +1,5 @@
 const map = L.map('map').setView([41.480492405593466, -71.31096111763853], 16);
-const accessToken = process.env.ACCESS_TOKEN;
+const accessToken = "pk.eyJ1IjoiYXJmYXJvYnMiLCJhIjoiY2wxMGhuNnJlMDU0ODNrcnprM2FieDYwZyJ9.shCLpqfyIUhfeZGaWoEghA";
 
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
