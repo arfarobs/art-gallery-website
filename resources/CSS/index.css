@@ -35,6 +35,7 @@ body {
     align-items: center;
     flex-direction: column;
     background: #FCFAF9;
+		min-height: 100vh;
 }
 
 h1, h2, h3, header a {
@@ -54,12 +55,17 @@ p, address {
 /*Index Header*/
 
 .index-header {
-    width: 375px;
+    max-width: 768px;
+		display: flex; 
+		flex-direction: column;
+		align-items: center;
 }
 
 .hero {
-    width: 375px;
-    height: 240px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		background: #e2e6e7;
 }
 
 header h1 {
@@ -69,6 +75,7 @@ header h1 {
     color: #151515;
     margin: 32px 16px;
     font-weight: 900;
+		max-width: 343px;
 }
 
 h1 span {
@@ -80,6 +87,7 @@ header p {
     line-height: 28px;
     color: #444444;
     margin: 32px 16px;
+		max-width: 500px;
 }
 
 .our-location-button, .back-to-home-button, .arrow-container {
@@ -89,13 +97,13 @@ header p {
 
 .button-container {
     display: flex;
-    width: 260px;
+    max-width: 375px;
     height: 72px;
 }
 
 .button {
-    width: 100%;
-    height: 100%;
+    width: 260px;
+    height: 72px;
     background: #151515;
     display: flex;
     position: relative;
@@ -129,11 +137,11 @@ header p {
     height: 24px;
 }
 
-.button:hover {
+.button:hover, .button:focus-visible {
 	background: #D5966C;
 }
 
-.button:hover .arrow-container {
+.button:hover .arrow-container, .button:focus-visible .arrow-container {
 	background: #151515;
 }
 
@@ -141,15 +149,17 @@ header p {
 
 .location-header {
 	height: 550px;
-  max-width: 375px;
+  max-width: 1440px;
+	width: 100%;
   position: relative;
+	max-height: 70vh;
 }
 
 .map-container {
-	position: relative;
 	z-index: 1;
 	height: 550px;
-	width: 375px;
+	width: 100%;
+	max-height: 100%;
 }
 
 .location-header .button-container {
@@ -165,17 +175,24 @@ header p {
 /*Index Main*/
 
 .index-main {
-    margin: 120px 16px;
-    width: 343px;
+    margin: 120px 0;
+    max-width: 768px;
+		padding: 0 16px;
 }
 
-.img-grid-1 {
-    width: 343px;
-    height: 320px;
+article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+article img {
+	height: auto;
+	max-width: 100%;
 }
 
 .your-day {
-    margin: 21px 0 32px;
+    margin: 21px 0;
 }
 
 .index-main h2 {
@@ -201,20 +218,13 @@ main p {
     color: #444444;
 }
 
-.img-grid-2 {
-    width: 343px;
-    height: 480px;
-}
-
 .img-grid-3 {
-    width: 343px;
-    height: 200px;
     margin: 16px 0px;
 }
 
 .come {
     background: #151515;
-    padding: 48px 24px 47px;
+    padding: 48px 0 47px;
 }
 
 .come h2 {
@@ -230,7 +240,8 @@ main p {
 
 .location-main {
 	background: #151515;
-	max-width: 375px;
+	max-width: 1440px;
+	width: 100%;
 }
 
 main h1 {
@@ -239,6 +250,7 @@ main h1 {
   font-size: 50px;
   line-height: 45px;
   color: #FFFFFF;
+	align-self: flex-start;
 }
 
 .info {
@@ -270,7 +282,7 @@ address {
 footer {
     padding: 48px 32px;
     background: #151515;
-    max-width: 375px;
+    max-width: 1440px;
 }
 
 h3 {
@@ -317,6 +329,8 @@ ul a {
 /*Location Footer*/
 
 .location-footer {
+	max-width: 1440px;
+	width: 100%;
 	background: #D5966C;
 }
 
@@ -342,6 +356,7 @@ ul a {
         width: 437px;
         height: 700px;
         grid-area: 1 / 1 / 4 / 3;
+				background: unset;
     }
 
     header h1 {
@@ -368,13 +383,12 @@ ul a {
 		/*Location Header*/
 
 		.location-header {
+			max-width: 1440px;
 			height: 600px;
-			max-width: 768px;
 		}
 
 		.map-container {
 			height: 600px;
-			width: 768px;
 		}
 
 		.location-header .button-container {
@@ -432,15 +446,13 @@ ul a {
 
 		/*Location Main*/
 
-		.location-main {
-			max-width: 768px;
-		}
-
 		.location-main article {
-			width: 768px;
+			width: 100%;
+			max-width: 1400px;
 			display: flex;
 			padding: 88px 40px 80px 39px;
 			justify-content: space-between;
+			flex-direction: row;
 		}
 
 		main h1 {
