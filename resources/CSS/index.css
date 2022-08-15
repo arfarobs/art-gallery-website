@@ -365,6 +365,7 @@ ul a {
         grid-area: 1 / 2 / 2 / 4;
         margin: 0;
         align-self: end;
+				max-width: unset;
     }
 
     header p {
@@ -383,7 +384,6 @@ ul a {
 		/*Location Header*/
 
 		.location-header {
-			max-width: 1440px;
 			height: 600px;
 		}
 
@@ -448,7 +448,6 @@ ul a {
 
 		.location-main article {
 			width: 100%;
-			max-width: 1400px;
 			display: flex;
 			padding: 88px 40px 80px 39px;
 			justify-content: space-between;
@@ -504,6 +503,7 @@ ul a {
     .index-header {
         grid-gap: 0 0;
         grid-template: 190px 224px 386px / 165px 285px 229px 246px 65px 449px;
+				align-items: unset;
     }
 
     .hero {
@@ -539,9 +539,7 @@ ul a {
 
 		/*Location Header*/
 
-		.location-header {
-			max-width: 1440px;
-		}
+
 
 		.location-header .button-container {
 			left: 156px;
@@ -607,9 +605,7 @@ ul a {
 
 		/*Location Main*/
 
-		.location-main {
-			max-width: 1440px;
-		}
+
 
 		.location-main article {
 			width: 1440px;
