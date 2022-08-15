@@ -408,6 +408,7 @@ ul a {
         display: grid;
         grid-template: 400px 313px 396px / 279px 108px 280px;
         grid-gap: 11px 11px;
+				align-items: unset;
     }
 
     .img-grid-1 {
@@ -564,6 +565,7 @@ ul a {
 
     .your-day {
         width: 350px;
+        margin: 60px 0 0;
     }
 
     .index-main h2 {
