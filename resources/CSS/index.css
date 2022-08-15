@@ -551,6 +551,7 @@ ul a {
     .index-main {
         margin: 180px 164px 180px 165px;
         width: 1110px;
+				padding: 0;
     }
 
     .index-main article {
